@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nerdschoolbergen/modern-javascript-and-rest/issues"
   },
-  "homepage": "https://github.com/nerdschoolbergen/modern-javascript-and-rest#readme"
+  "homepage": "https://github.com/nerdschoolbergen/modern-javascript-and-rest#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
