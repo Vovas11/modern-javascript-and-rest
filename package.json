@@ -1,0 +1,19 @@
+{
+  "name": "modern-javascript-and-rest",
+  "version": "1.0.0",
+  "description": "Use of ES6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdschoolbergen/modern-javascript-and-rest.git"
+  },
+  "author": "Vladimir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdschoolbergen/modern-javascript-and-rest/issues"
+  },
+  "homepage": "https://github.com/nerdschoolbergen/modern-javascript-and-rest#readme"
+}
