@@ -1,12 +1,18 @@
+const tvShowService = require('./tvShowService');
 const express = require('express');
 const TvShow = require('./TvShow');
 
 const tvShowRouter = express.Router();
-const tvShows = [new TvShow(1, 'Mr.Robot', 'Drama'),
- new TvShow(2, 'Black Mirror', 'Drama')];
 
 tvShowRouter.get('/', (req, res) => {
-  res.json(tvShows);
+  res.json(tvShowService.getAll());
 });
+
+tvShowRouter.route('/:tvShowId').get((req, res) => {
+  const tvShowId = req.params.tvShowId;
+  console.log(`Fetching TV Show with id: {${tvShowId}}`);
+  res.send(tvShowService.getById(tvShowId));
+});
+
 
 module.exports = tvShowRouter;
